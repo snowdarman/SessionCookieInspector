@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PHP Session & Cookie Inspector</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: #f5f6f8;
+            color: #333;
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                "Noto Sans JP",
+                sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .header {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 28px;
+            line-height: 1.4;
+        }
+
+        .description {
+            margin: 0;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .card {
+            background: #fff;
+            margin-bottom: 16px;
+            padding: 24px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .card h2 {
+            margin: 0 0 8px;
+            font-size: 20px;
+        }
+
+        .card p {
+            margin: 0 0 18px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 11px 18px;
+            border-radius: 8px;
+            background: #333;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            opacity: 0.85;
+        }
+
+        .sample {
+            background: #fafafa;
+        }
+
+        .sample .button {
+            background: #666;
+        }
+
+        .footer {
+            margin-top: 32px;
+            text-align: center;
+            color: #999;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 24px 16px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <h1>PHP Session &amp; Cookie Inspector</h1>
+
+        <p class="description">
+            PHPのSessionとCookieを確認・編集する<br>
+            開発者向けツールです。
+        </p>
+    </header>
+
+
+    <section class="card">
+
+        <h2>Session &amp; Cookie Inspector</h2>
+
+        <p>
+            現在のSessionとCookieの内容を確認したり、
+            値を編集・削除したりできます。
+        </p>
+
+        <a class="button" href="manage-session.php">
+            SESSION Inspectorを開く
+        </a>
+        <a class="button" href="manage-cookie.php">
+            COOKIE Inspectorを開く
+        </a>
+
+    </section>
+
+
+    <section class="card sample">
+
+        <h2>Session Sample</h2>
+
+        <p>
+            テスト用のSessionデータを作成します。
+            Inspectorの動作確認に利用できます。
+        </p>
+
+        <a class="button" href="session-sample.php">
+            Session Sample
+        </a>
+
+    </section>
+
+
+    <section class="card sample">
+
+        <h2>Cookie Sample</h2>
+
+        <p>
+            テスト用のCookieを作成します。
+            Inspectorの動作確認に利用できます。
+        </p>
+
+        <a class="button" href="cookie-sample.php">
+            Cookie Sample
+        </a>
+
+    </section>
+
+
+    <footer class="footer">
+        PHP Session &amp; Cookie Inspector
+    </footer>
+
+</div>
+
+</body>
+</html>
